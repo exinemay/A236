@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kỷ Yếu Lớp A(23-26)</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <style>
+      :root {
+        --primary-color: #4a90e2; /* Màu chủ đạo */
+        --bg-color: #f4f7f6;
+        --card-bg: #ffffff;
+        --text-color: #333;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.6;
+      }
+
+      /* Phần Header */
+      header {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 0 0 30px 30px;
+        margin-bottom: 40px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+
+      header p {
+        font-size: 1.1rem;
+        opacity: 0.9;
+      }
+
+      /* Phần Container chính */
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 20px 60px;
+      }
+
+      /* Lưới Album */
+      .album-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+      }
+
+      /* Thẻ Album (Card) */
+      .album-card {
+        background: var(--card-bg);
+        border-radius: 15px;
+        padding: 25px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        color: var(--text-color);
+        border: 1px solid #eee;
+        position: relative;
+        display: block; /* Để thẻ a bao trùm div */
+      }
+
+      .album-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        border-color: var(--primary-color);
+      }
+
+      .icon-box {
+        font-size: 40px;
+        color: var(--primary-color);
+        margin-bottom: 15px;
+      }
+
+      .album-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .album-desc {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      .btn-view {
+        display: inline-block;
+        padding: 8px 20px;
+        background-color: #edf2f7;
+        color: var(--primary-color);
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 0.85rem;
+        transition: background 0.2s;
+      }
+
+      .album-card:hover .btn-view {
+        background-color: var(--primary-color);
+        color: white;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 20px;
+        color: #888;
+        font-size: 0.9rem;
+        margin-top: auto;
+      }
+
+      /* Responsive Mobile */
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 1.8rem;
+        }
+        .container {
+          padding: 0 15px 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Lớp 12A - THPT Nguyễn Văn Cừ</h1>
+        <p>Niên khóa 2023 - 2026 | Không ngại var chạm</p>
+      </div>
+    </header>
+
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 30px">
+        <h3>📂 Photos Compilation</h3>
+        <p style="color: #666">
+          Click vào từng mục bên dưới để xem ảnh chất lượng cao trên Drive
+        </p>
+      </div>
+
+      <div class="album-grid">
+        <a
+          href="LINK_GOOGLE_DRIVE_CUA_BAN_O_DAY"
+          target="_blank"
+          class="album-card"
+        >
+          <div class="icon-box"><i class="fas fa-camera-retro"></i></div>
+          <div class="album-title">Ảnh Kỷ Yếu</div>
+          <div class="album-desc">
+            Full bộ ảnh chụp tại trường và camping ngày 11/01/2026.
+          </div>
+          <span class="btn-view"
+            >Xem Album <i class="fas fa-arrow-right"></i
+          ></span>
+        </a>
+
+        <a href="#" target="_blank" class="album-card">
+          <div class="icon-box"><i class="fas fa-bus"></i></div>
+          <div class="album-title">Daily Moments</div>
+          <div class="album-desc">Những khoảnh khắc "bất ổn" đời thường.</div>
+          <span class="btn-view"
+            >Xem Album <i class="fas fa-arrow-right"></i
+          ></span>
+        </a>
+
+        <a href="#" target="_blank" class="album-card">
+          <div class="icon-box"><i class="fas fa-graduation-cap"></i></div>
+          <div class="album-title">Lễ Bế Giảng</div>
+          <div class="album-desc">
+            Ngày chia tay, ký áo và những giọt nước mắt.
+          </div>
+          <span class="btn-view"
+            >Xem Album <i class="fas fa-arrow-right"></i
+          ></span>
+        </a>
+
+        <a href="#" target="_blank" class="album-card">
+          <div class="icon-box"><i class="fas fa-video"></i></div>
+          <div class="album-title">Video Clip</div>
+          <div class="album-desc">
+            Tổng hợp các video TikTok, clip hậu trường lớp quay.
+          </div>
+          <span class="btn-view"
+            >Xem Playlist <i class="fas fa-arrow-right"></i
+          ></span>
+        </a>
+
+        <a href="#" target="_blank" class="album-card">
+          <div class="icon-box"><i class="fas fa-images"></i></div>
+          <div class="album-title">Ảnh Dìm Hàng</div>
+          <div class="album-desc">
+            Folder mật: Cấm share ra ngoài dưới mọi hình thức!
+          </div>
+          <span class="btn-view"
+            >Xem Ngay <i class="fas fa-arrow-right"></i
+          ></span>
+        </a>
+
+        <a href="#" target="_blank" class="album-card">
+          <div class="icon-box"><i class="fas fa-folder-open"></i></div>
+          <div class="album-title">Tài Liệu Ôn Thi</div>
+          <div class="album-desc">
+            Góc học tập: Đề thi thử, tài liệu các môn.
+          </div>
+          <span class="btn-view"
+            >Truy cập <i class="fas fa-arrow-right"></i
+          ></span>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Được thực hiện bởi Tham Mưu Trưởng Lớp 12A <br />
+        © 2026 All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
